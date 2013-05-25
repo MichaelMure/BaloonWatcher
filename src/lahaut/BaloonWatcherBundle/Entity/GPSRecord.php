@@ -1,0 +1,212 @@
+<?php
+
+namespace lahaut\BaloonWatcherBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use lahaut\BaloonWatcherBundle\Entity\Scenario;
+use lahaut\BaloonWatcherBundle\Entity\GPSRecordRepository;
+
+/**
+ * GPSRecord
+ *
+ * @ORM\Table()
+ * @ORM\Entity(repositoryClass="GPSRecordRepository")
+ */
+class GPSRecord
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="latitude", type="float")
+     */
+    private $latitude;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="longitude", type="float")
+     */
+    private $longitude;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="altitude", type="float")
+     */
+    private $altitude;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="creationDate", type="datetime")
+     */
+    private $creationDate;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="modificationDate", type="datetime")
+     */
+    private $modificationDate;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Scenario", inversedBy="gpsRecordList", cascade={"persist"})
+     * @ORM\JoinColumn(name="scenario_id", referencedColumnName="id")
+     */
+    private $scenario;
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set latitude
+     *
+     * @param float $latitude
+     * @return GPSRecord
+     */
+    public function setLatitude($latitude)
+    {
+        $this->latitude = $latitude;
+
+        return $this;
+    }
+
+    /**
+     * Get latitude
+     *
+     * @return float
+     */
+    public function getLatitude()
+    {
+        return $this->latitude;
+    }
+
+    /**
+     * Set longitude
+     *
+     * @param float $longitude
+     * @return GPSRecord
+     */
+    public function setLongitude($longitude)
+    {
+        $this->longitude = $longitude;
+
+        return $this;
+    }
+
+    /**
+     * Get longitude
+     *
+     * @return float
+     */
+    public function getLongitude()
+    {
+        return $this->longitude;
+    }
+
+    /**
+     * @param float $altitude
+     * @return GPSRecord
+     */
+    public function setAltitude($altitude)
+    {
+        $this->altitude = $altitude;
+
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAltitude()
+    {
+        return $this->altitude;
+    }
+
+
+    /**
+     * Set creationDate
+     *
+     * @param \DateTime $creationDate
+     * @return GPSRecord
+     */
+    public function setCreationDate($creationDate)
+    {
+        $this->creationDate = $creationDate;
+
+        return $this;
+    }
+
+    /**
+     * Get creationDate
+     *
+     * @return \DateTime
+     */
+    public function getCreationDate()
+    {
+        return $this->creationDate;
+    }
+
+    /**
+     * Set modificationDate
+     *
+     * @param \DateTime $modificationDate
+     * @return GPSRecord
+     */
+    public function setModificationDate($modificationDate)
+    {
+        $this->modificationDate = $modificationDate;
+
+        return $this;
+    }
+
+    /**
+     * Get modificationDate
+     *
+     * @return \DateTime
+     */
+    public function getModificationDate()
+    {
+        return $this->modificationDate;
+    }
+
+    /**
+     * Set scenario
+     *
+     * @param Scenario $scenario
+     * @return GPSRecord
+     */
+    public function setScenario(\lahaut\BaloonWatcherBundle\Entity\Scenario $scenario = null)
+    {
+        $this->scenario = $scenario;
+    
+        return $this;
+    }
+
+    /**
+     * Get scenario
+     *
+     * @return Scenario
+     */
+    public function getScenario()
+    {
+        return $this->scenario;
+    }
+}
