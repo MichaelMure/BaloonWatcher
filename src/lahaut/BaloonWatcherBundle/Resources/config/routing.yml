@@ -9,3 +9,9 @@ baloon_watcher_homepage:
 baloon_watcher_wsrecord:
     resource: "@BaloonWatcherBundle/Controller/WSRecordController.php"
     type:     annotation
+
+monitoring:
+    resource: "@BaloonWatcherBundle/Controller/MonitoringController.php"
+    type:     annotation
+
+

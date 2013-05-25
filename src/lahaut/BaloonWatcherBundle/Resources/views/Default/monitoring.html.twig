@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+
+        <link rel="stylesheet" href="{{ asset('bundles/baloonwatcher/css/bootstrap.min.css') }}" />
+        <title>{% block title %}{% endblock %} - Là-Haut</title>
+    {% endblock %}
+</head>
+<body>
+<div id="content">
+    {% block content %}
+
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Là-Haut</a>
+                    <div class="nav-collapse collapse" id="main-menu">
+                        <ul class="nav" id="main-menu-left">
+                            <li><a href="#">Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <p>content</p>
+        </div>
+
+    {% endblock %}
+</div>
+<div id="footer">
+    {% block footer %}
+    {% endblock %}
+</div>
+</body>
+</html>
