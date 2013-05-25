@@ -1,0 +1,4 @@
+baloon_watcher:
+    resource: "@BaloonWatcherBundle/Resources/config/routing.yml"
+    prefix:   /
+
