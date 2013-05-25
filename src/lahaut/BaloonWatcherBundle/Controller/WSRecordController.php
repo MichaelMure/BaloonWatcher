@@ -7,6 +7,11 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use lahaut\BaloonWatcherBundle\Entity\GPSRecordRepository;
 use lahaut\BaloonWatcherBundle\Entity\GPSRecord;
 use lahaut\BaloonWatcherBundle\Entity\Scenario;
+use Symfony\Component\Serializer\Encoder\JsonEncoder;
+use Symfony\Component\Serializer\Normalizer\GetSetMethodNormalizer;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\Serializer\Serializer;
+use Symfony\Component\HttpFoundation\Response;
 
 class WSRecordController extends Controller
 {
@@ -32,12 +37,7 @@ class WSRecordController extends Controller
         $em->persist($gpsRecord);
         $em->flush();
 
-        return $this->render('BaloonWatcherBundle:Default:index.html.twig',
-            array('latitude' => $latitude,
-                'longitude' => $longitude,
-                'altitude' => $altitude
-            )
-        );
+        return $this->render('BaloonWatcherBundle:Default:insertionSuccessful.html.twig');
     }
 
     /**
@@ -125,17 +125,37 @@ class WSRecordController extends Controller
 
     /**
      * Returns the list of gpsPoint associated to the last scenario
-     * @Route("/gpsPointListForLastScenario")
+     * @Route("/gpsPointListForLastScenario", options={"expose"=true})
      */
-    public function gpsPointListForLastScenarioAction()
+    public function gpsPointListForLastScenario()
     {
         $em = $this->getDoctrine()->getManager();
         $lastScenario = $this->createNewOrRetrieveLastScenation();
         $gpsRecordList = $lastScenario->getGpsRecordList();
 
-        return $this->render('BaloonWatcherBundle:Default:gpsPointList.html.twig',
-            array('gpsPointList' => $gpsRecordList)
-        );
+        return new JsonResponse($this->normalizeGpsPointList($gpsRecordList));
+    }
+
+    /**
+     * This method is used to normalize the gpsPointList (in order to return json data)
+     *
+     * @param array $gpsPointList
+     * return array
+     */
+    private function normalizeGpsPointList($gpsPointList)
+    {
+        $res = array();
+
+        foreach ($gpsPointList as $gpsPoint) {
+            $normalizedPoint = array();
+            $normalizedPoint['latitude'] = $gpsPoint->getLatitude();
+            $normalizedPoint['longitude'] = $gpsPoint->getLongitude();
+            $normalizedPoint['altitude'] = $gpsPoint->getAltitude();
+
+            $res []= $normalizedPoint;
+        }
+
+        return $res;
     }
 
 }

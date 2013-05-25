@@ -2,8 +2,13 @@
 <html>
 <head>
     {% block head %}
-
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <link rel="stylesheet" href="{{ asset('bundles/baloonwatcher/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/baloonwatcher/css/style.css') }}" />
+        <script src="{{ asset('bundles/baloonwatcher/js/jquery-1.10.0.min.js') }}" ></script>
+        <script src="{{ asset('bundles/baloonwatcher/js/MonitoringPageController.js') }}" ></script>
+        <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+        <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
         <title>{% block title %}{% endblock %} - Là-Haut</title>
     {% endblock %}
 </head>
@@ -29,8 +34,21 @@
             </div>
         </div>
 
-        <div id="content">
-            <p>content</p>
+        <div class="container">
+            <header class="jumbotron subhead" id="overview">
+                <div class="row">
+                    <div class="span6">
+                        <h1>Là-Haut</h1>
+                        <p class="lead">(sur la montagne)</p>
+                        <div id="map3d" "></div>
+                    </div>
+                </div>
+            </header>
+
+
+            <div id="content">
+
+            </div>
         </div>
 
     {% endblock %}

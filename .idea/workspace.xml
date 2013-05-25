@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/MonitoringController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/base.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/config/routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/js/MonitoringPageController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/insertionSuccessful.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/js/jquery-1.10.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/WSRecordController.php" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/WSRecordController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BaloonWatcher.iws" />
@@ -14,7 +19,7 @@
     <file path="/Dummy.txt" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369487558433" ignored="false" />
     <file path="/a.dummy" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369500536502" ignored="false" />
     <file path="/routing.yml" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369500130656" ignored="false" />
-    <file path="/WSRecordController.php" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369494657396" ignored="false" />
+    <file path="/WSRecordController.php" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369512976970" ignored="false" />
     <file path="/index.html.twig" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369484681301" ignored="false" />
     <file path="/parameters.yml" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369485267078" ignored="false" />
     <file path="/GPSRecord.php" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369489467826" ignored="false" />
@@ -22,8 +27,12 @@
     <file path="/scenarioCreationSuccessful.html.twig" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369493161803" ignored="false" />
     <file path="/gpsPointList.html.twig" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369494755173" ignored="false" />
     <file path="/MonitoringController.php" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369500047921" ignored="false" />
-    <file path="/monitoring.html.twig" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369502634814" ignored="false" />
+    <file path="/monitoring.html.twig" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369507843521" ignored="false" />
     <file path="/base.html.twig" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369501091536" ignored="false" />
+    <file path="/MonitoringPageController.js" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369515674857" ignored="false" />
+    <file path="/style.css" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369508068030" ignored="false" />
+    <file path="/composer.json" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369512295347" ignored="false" />
+    <file path="$PROJECT_DIR$/app/cache/dev/classes.php" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369514919857" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,16 +66,72 @@
       <file leaf-file-name="WSRecordController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/WSRecordController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="115" selection-end="174" vertical-scroll-proportion="8.125">
+            <state line="127" column="45" selection-start="4234" selection-end="4234" vertical-scroll-proportion="-13.291667">
+              <folding>
+                <element signature="e#57#114#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppKernel.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="57" selection-start="1025" selection-end="1025" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="monitoring.html.twig" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig">
+      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="35" selection-start="933" selection-end="933" vertical-scroll-proportion="0.45918366">
+            <state line="5" column="72" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing_dev.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="insertionSuccessful.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/insertionSuccessful.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="14" selection-start="1714" selection-end="1719" vertical-scroll-proportion="-23.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="20" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MonitoringPageController.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/js/MonitoringPageController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="95" selection-start="314" selection-end="314" vertical-scroll-proportion="0.15286624">
               <folding />
             </state>
           </provider>
@@ -90,26 +155,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/routing_dev.yml" />
-        <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Entity/GPSRecord.php" />
         <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Entity/Scenario.php" />
         <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/scenarioCreationSuccessful.html.twig" />
         <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/gpsPointList.html.twig" />
-        <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/WSRecordController.php" />
         <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/MonitoringController.php" />
         <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/css/style.css" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/insertionSuccessful.html.twig" />
+        <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/WSRecordController.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig" />
+        <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/js/MonitoringPageController.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2" />
-    <option name="y" value="22" />
+    <option name="x" value="-5" />
+    <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="956" />
   </component>
@@ -283,6 +350,40 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaloonWatcher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaloonWatcher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lahaut" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaloonWatcherBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -358,6 +459,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaloonWatcher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaloonWatcher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -367,6 +486,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/js" />
       <recent name="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/css" />
     </key>
   </component>
@@ -390,7 +510,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="22" width="1680" height="956" extended-state="6" />
+    <frame x="-5" y="23" width="1680" height="956" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -473,76 +593,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/DependencyInjection/BaloonWatcherExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="6" selection-start="1823" selection-end="1823" vertical-scroll-proportion="-3.268421">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="27" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="100" selection-start="362" selection-end="362" vertical-scroll-proportion="0.21072797">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Entity/GPSRecord.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="4" selection-start="798" selection-end="1060" vertical-scroll-proportion="-18.125">
-          <folding>
-            <element signature="e#53#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Entity/GPSRecordRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="96" selection-end="115" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Entity/Scenario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="17" selection-start="671" selection-end="683" vertical-scroll-proportion="25.5">
-          <folding>
-            <element signature="e#53#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/scenarioCreationSuccessful.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/gpsPointList.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="43" selection-start="193" selection-end="193" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
@@ -561,6 +614,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/gpsPointList.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="32" selection-start="20" selection-end="32" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Serializer/Serializer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="266" selection-end="266" vertical-scroll-proportion="0.07653061">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/MonitoringController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="68" selection-start="420" selection-end="430" vertical-scroll-proportion="-9.375">
@@ -570,23 +644,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/insertionSuccessful.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/WSRecordController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="115" selection-end="174" vertical-scroll-proportion="8.125">
+        <state line="127" column="45" selection-start="4234" selection-end="4234" vertical-scroll-proportion="-13.291667">
+          <folding>
+            <element signature="e#57#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="57" selection-start="1025" selection-end="1025" vertical-scroll-proportion="-13.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="72" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="35" selection-start="933" selection-end="933" vertical-scroll-proportion="0.45918366">
+        <state line="10" column="99" selection-start="702" selection-end="702" vertical-scroll-proportion="0.18478261">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="14" selection-start="1714" selection-end="1719" vertical-scroll-proportion="-23.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/js/MonitoringPageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="95" selection-start="314" selection-end="314" vertical-scroll-proportion="0.15286624">
           <folding />
         </state>
       </provider>
