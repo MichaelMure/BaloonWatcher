@@ -46,7 +46,7 @@ class Scenario
     private $modificationDate;
 
     /**
-     * @ORM\OneToMany(targetEntity="GpsRecord", mappedBy="scenario")
+     * @ORM\OneToMany(targetEntity="GPSRecord", mappedBy="scenario")
      */
     private $gpsRecordList;
 
