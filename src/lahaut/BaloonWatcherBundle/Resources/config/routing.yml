@@ -1,3 +1,11 @@
 baloon_watcher_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: BaloonWatcherBundle:Default:index }
+
+#baloon_watcher_wsrecord:
+#    pattern:  /hoho/{name}
+#    defaults: { _controller: BaloonWatcherBundle:WSRecord:index }
+
+baloon_watcher_wsrecord:
+    resource: "@BaloonWatcherBundle/Controller/WSRecordController.php"
+    type:     annotation
