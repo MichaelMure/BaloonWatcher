@@ -46,7 +46,7 @@ class Scenario
     private $modificationDate;
 
     /**
-     * @ORM\OneToMany(targetEntity="GPSRecord", mappedBy="scenario")
+     * @ORM\OneToMany(targetEntity="lahaut\BaloonWatcherBundle\Entity\GPSRecord", mappedBy="scenario")
      */
     private $gpsRecordList;
 

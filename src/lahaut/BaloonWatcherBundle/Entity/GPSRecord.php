@@ -59,7 +59,7 @@ class GPSRecord
     private $modificationDate;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Scenario", inversedBy="gpsRecordList", cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="lahaut\BaloonWatcherBundle\Entity\Scenario", inversedBy="gpsRecordList", cascade={"persist"})
      * @ORM\JoinColumn(name="scenario_id", referencedColumnName="id")
      */
     private $scenario;
