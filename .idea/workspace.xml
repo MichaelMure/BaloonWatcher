@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/BaloonWatcher.iml" afterPath="$PROJECT_DIR$/.idea/BaloonWatcher.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/MonitoringController.php" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/MonitoringController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BaloonWatcher.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +17,7 @@
     <file path="/scenarioCreationSuccessful.html.twig" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369493161803" ignored="false" />
     <file path="/gpsPointList.html.twig" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369494755173" ignored="false" />
     <file path="/MonitoringController.php" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369500047921" ignored="false" />
-    <file path="/monitoring.html.twig" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369555671612" ignored="false" />
+    <file path="/monitoring.html.twig" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369556256468" ignored="false" />
     <file path="/base.html.twig" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369501091536" ignored="false" />
     <file path="/MonitoringPageController.js" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369530884070" ignored="false" />
     <file path="/style.css" changelist="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" time="1369508068030" ignored="false" />
@@ -75,7 +72,7 @@
       <file leaf-file-name="monitoring.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="28" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.6513158">
+            <state line="26" column="59" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.5131579">
               <folding />
             </state>
           </provider>
@@ -628,7 +625,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="28" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.6513158">
+        <state line="26" column="59" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.5131579">
           <folding />
         </state>
       </provider>
