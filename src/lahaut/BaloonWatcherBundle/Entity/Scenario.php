@@ -95,7 +95,7 @@ class Scenario
      * @param GpsRecord $gpsRecordList
      * @return Scenario
      */
-    public function addGpsRecordList(GPSRecord$gpsRecordList)
+    public function addGpsRecordList(GPSRecord $gpsRecordList)
     {
         $this->gpsRecordList[] = $gpsRecordList;
     
