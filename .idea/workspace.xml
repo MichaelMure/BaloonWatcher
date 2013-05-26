@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/js/MonitoringPageController.js" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/js/MonitoringPageController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/css/style.css" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/css/style.css" />
     </list>
     <ignored path="BaloonWatcher.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MonitoringPageController.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MonitoringPageController.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/js/MonitoringPageController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="51" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.0">
+            <state line="69" column="39" selection-start="1801" selection-end="1801" vertical-scroll-proportion="0.8469388">
               <folding />
             </state>
           </provider>
@@ -80,10 +78,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="21" selection-start="86" selection-end="86" vertical-scroll-proportion="0.114795916">
+            <state line="6" column="21" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,9 +154,9 @@
         <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Entity/Scenario.php" />
         <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Entity/GPSRecord.php" />
         <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Controller/MonitoringController.php" />
-        <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/js/MonitoringPageController.js" />
         <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig" />
         <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/css/style.css" />
+        <option value="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/js/MonitoringPageController.js" />
       </list>
     </option>
   </component>
@@ -686,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/js/MonitoringPageController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="51" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="51" selection-start="2011" selection-end="2022" vertical-scroll-proportion="-18.75">
@@ -702,7 +693,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="21" selection-start="86" selection-end="86" vertical-scroll-proportion="0.114795916">
+        <state line="6" column="21" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/public/js/MonitoringPageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="39" selection-start="1801" selection-end="1801" vertical-scroll-proportion="0.8469388">
           <folding />
         </state>
       </provider>

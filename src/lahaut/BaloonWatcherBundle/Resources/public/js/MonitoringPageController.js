@@ -65,10 +65,9 @@ function displayGpsPointList() {
         ge.getFeatures().appendChild(placemark);
     }
 
-    lastPoint = $gpsPointList.last;
-
     if($gpsPointList != null && $gpsPointList.length > 0)
     {
+        lastPoint = $gpsPointList.last;
         $(".js-latitude").html(lastPoint.latitude);
         $(".js-longitude").html(lastPoint.longitude);
         $(".js-altitude").html(lastPoint.altitude);
