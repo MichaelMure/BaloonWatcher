@@ -95,7 +95,7 @@ class Scenario
      * @param GpsRecord $gpsRecordList
      * @return Scenario
      */
-    public function addGpsRecordList(\lahaut\BaloonWatcherBundle\Entity\GpsRecord $gpsRecordList)
+    public function addGpsRecordList(GPSRecord$gpsRecordList)
     {
         $this->gpsRecordList[] = $gpsRecordList;
     
@@ -107,7 +107,7 @@ class Scenario
      *
      * @param GpsRecord $gpsRecordList
      */
-    public function removeGpsRecordList(\lahaut\BaloonWatcherBundle\Entity\GpsRecord $gpsRecordList)
+    public function removeGpsRecordList(GPSRecord $gpsRecordList)
     {
         $this->gpsRecordList->removeElement($gpsRecordList);
     }

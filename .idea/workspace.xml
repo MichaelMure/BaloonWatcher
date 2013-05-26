@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c5bfee8-c4dc-49c7-a8cc-f821b206e6e0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Entity/Scenario.php" afterPath="$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Entity/Scenario.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BaloonWatcher.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,28 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="monitoring.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Resources/views/Default/monitoring.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="28" selection-start="1877" selection-end="1877" vertical-scroll-proportion="-26.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GPSRecord.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Entity/GPSRecord.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="44" selection-start="1131" selection-end="1139" vertical-scroll-proportion="-22.5">
+            <state line="56" column="41" selection-start="1011" selection-end="1027" vertical-scroll-proportion="6.25">
               <folding>
                 <element signature="e#53#85#0" expanded="true" />
               </folding>
@@ -93,7 +74,7 @@
       <file leaf-file-name="Scenario.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Entity/Scenario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="7" selection-start="770" selection-end="770" vertical-scroll-proportion="0.630749">
+            <state line="144" column="35" selection-start="2674" selection-end="2674" vertical-scroll-proportion="0.8076416">
               <folding>
                 <element signature="e#53#85#0" expanded="true" />
               </folding>
@@ -108,35 +89,6 @@
               <folding>
                 <element signature="e#57#114#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="49" selection-start="144" selection-end="153" vertical-scroll-proportion="-3.125">
-              <folding>
-                <element signature="e#7#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="25" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parameters.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="392" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -629,7 +581,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Entity/GPSRecord.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="44" selection-start="1131" selection-end="1139" vertical-scroll-proportion="-22.5">
+        <state line="56" column="41" selection-start="1011" selection-end="1027" vertical-scroll-proportion="6.25">
           <folding>
             <element signature="e#53#85#0" expanded="true" />
           </folding>
@@ -638,7 +590,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lahaut/BaloonWatcherBundle/Entity/Scenario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="7" selection-start="770" selection-end="770" vertical-scroll-proportion="0.630749">
+        <state line="144" column="35" selection-start="2674" selection-end="2674" vertical-scroll-proportion="0.8076416">
           <folding>
             <element signature="e#53#85#0" expanded="true" />
           </folding>
