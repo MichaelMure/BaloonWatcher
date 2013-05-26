@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class MonitoringController extends Controller{
 
     /**
-     * @Route("/index")
+     * @Route("/")
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function indexAction()
