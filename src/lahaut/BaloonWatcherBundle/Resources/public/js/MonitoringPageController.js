@@ -49,7 +49,7 @@ function displayGpsPointList() {
         point.setLatitude($gpsPointList[key].latitude);
         point.setLongitude($gpsPointList[key].longitude);
         point.setAltitudeMode(ge.ALTITUDE_ABSOLUTE);
-        point.setAltitude(395);
+        point.setAltitude($gpsPointList[key].altitude);
         placemark.setGeometry(point);
 
         // Add the placemark to Earth.
