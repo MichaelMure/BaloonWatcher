@@ -1,6 +1,15 @@
 var $gpsPointList = null;
 var ge = null;
 
+Object.defineProperty(Array.prototype, 'last', {
+    enumerable: false,
+    configurable: true,
+    get: function() {
+        return this[this.length - 1];
+    },
+    set: undefined
+});
+
 $(document).ready(function() {
     loadGpsPointList();
 });
@@ -55,6 +64,17 @@ function displayGpsPointList() {
         // Add the placemark to Earth.
         ge.getFeatures().appendChild(placemark);
     }
+
+    lastPoint = $gpsPointList.last;
+
+    if($gpsPointList != null && $gpsPointList.length > 0)
+    {
+        $(".js-latitude").html(lastPoint.latitude);
+        $(".js-longitude").html(lastPoint.longitude);
+        $(".js-altitude").html(lastPoint.altitude);
+    }
+
+
 }
 
 function failureCB(errorCode) {
